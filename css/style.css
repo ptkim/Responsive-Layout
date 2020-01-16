@@ -11,6 +11,7 @@ header {
     text-align: center;
     background-color: #eeeeee;
     padding: 24px;
+    overflow: hidden;
 }
 
 h1 {
@@ -18,13 +19,13 @@ h1 {
     font-weight: 700;
 }
 
-nav {
+.main_nav {
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
 }
 
-nav ul li {
+.main_nav ul li {
     list-style-type: none;
     text-transform: uppercase;
     background-color: white;
@@ -35,12 +36,13 @@ nav ul li {
     margin-left: auto;
 }
 
-nav a {
+.main_nav a {
     text-decoration: none;
     color: black;
     font-weight: 800;
 }
-header img {
+
+.profile {
     width: 70%;
     margin-top: 40px;
 }
@@ -118,11 +120,11 @@ address a {
 }
 
 
-.bottom_nav p {
+.footer_nav p {
     display: inline-block;
 }
 
-.bottom_nav a {
+.footer_nav a {
     text-decoration: none;
     color: black;
     font-weight: 800;
@@ -142,9 +144,65 @@ footer hr {
     margin-top: 60px;
 }
 
+.bottom_nav {
+    visibility: hidden;
+}
 
 @media all and (min-width: 768px) {
-    body {
-        margin-top: 100px;
+    .main_nav ul li {
+        background-color: transparent;
+        display: inline-block;
+        width: 20%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .main_nav {
+        margin-top: 24px;
+    }
+
+    .profile {
+        float: right;
+        width: 40%;
+        margin: 0px 16px 0px 8px;
+    }
+
+    header p {
+        text-align: left;
+    }
+
+    header {
+        padding-bottom: 60px;
+    }
+
+    main div {
+        display: inline-block;
+        width: 45%;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    .back_to_top {
+        visibility: hidden;
+    }
+
+    .bottom_nav {
+        visibility: visible;
+        float: right;
+    }
+
+    .bottom_nav ul {
+        padding-left: 0px;
+        position: absolute;
+        right: 24px;
+    }
+
+    .bottom_nav ul li {
+        list-style-type: none;
+        text-transform: uppercase;
+        padding: 8px;
+        display: inline-block;
     }
 }
