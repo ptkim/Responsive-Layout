@@ -142,6 +142,7 @@ address a {
 
 footer hr {
     margin-top: 60px;
+    border: #dddddd 1px solid;
 }
 
 .bottom_nav {
@@ -238,6 +239,10 @@ footer hr {
         
     }
 
+    header {
+        padding: 24px 56px 56px 56px;
+    }
+
     .main_nav_list {
         margin: 0px;
     }
@@ -251,5 +256,9 @@ footer hr {
         width: 56%;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    footer .bottom_student_nav {
+        width: auto;
     }
 }
