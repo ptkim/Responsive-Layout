@@ -7,6 +7,10 @@ body {
     margin: 0px;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     text-align: center;
     background-color: #eeeeee;
@@ -149,6 +153,45 @@ footer hr {
     visibility: hidden;
 }
 
+nav ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.design,
+.coding {
+    width: 90%;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.design {
+    background-image: url("../images/Skills_Design.jpg");
+    background-size: cover;
+}
+
+.coding {
+    background-image: url("../images/Skills_coding.jpg");
+    background-size: cover;
+}
+
+.design h4,
+.coding h4 {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    right: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
 @media all and (min-width: 768px) {
     .main_nav ul li {
         background-color: transparent;
@@ -260,5 +303,12 @@ footer hr {
 
     footer .bottom_student_nav {
         width: auto;
+    }
+
+    .design,
+    .coding {
+        display: inline-block;
+        width: 45%;
+        margin: 0 8px;
     }
 }
