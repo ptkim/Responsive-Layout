@@ -206,3 +206,50 @@ footer hr {
         display: inline-block;
     }
 }
+
+@media all and (min-width: 1024px) {
+    header .main_nav .main_nav_list_item{
+        width: auto;
+        margin: 0px 12px;
+        padding:0px;
+    }
+
+    header h1 {
+        left: 0px;
+        margin: 0px;
+        top: 30%;
+    }
+
+    .nav_bar {
+        height: 120px;
+        position: relative;
+    }
+
+    .main_nav {
+        margin: 0;
+        right: 0px;
+        top: 40%;
+    }
+
+    .main_nav,
+    header h1 {
+        display: inline-block;
+        position: absolute;
+        
+    }
+
+    .main_nav_list {
+        margin: 0px;
+    }
+
+    main div {
+        display: inline-block;
+        width: 30%;
+    }
+
+    footer p {
+        width: 56%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
